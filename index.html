@@ -10,12 +10,13 @@
 <style>
   :root { --ink:#1b2a41; --gold:#a98b4f; --paper:#f8f5ee; }
   * { box-sizing:border-box; margin:0; padding:0; }
-  html,body { height:100%; }
+  html { height:100%; }
+  main { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; }
   body {
     background: radial-gradient(ellipse at center, #fffdf8 0%, var(--paper) 70%, #efe9dc 100%);
     color: var(--ink);
-    display:flex; flex-direction:column; align-items:center; justify-content:center;
-    text-align:center; padding:2rem;
+    display:flex; flex-direction:column; align-items:center;
+    text-align:center; padding:2rem 2rem 1.5rem; min-height:100vh; min-height:100dvh;
     font-family:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   }
   h1 {
@@ -32,14 +33,16 @@
   a:hover { color:var(--gold); }
   address {
     font-family:'Cormorant Garamond', Georgia, serif; font-style:italic; font-weight:400;
-    font-size:1.2rem; line-height:1.6; letter-spacing:.08em; color:#4a5568; margin-top:2.6rem;
+    font-size:.9rem; line-height:1.5; letter-spacing:.08em; color:#4a5568; margin-top:0; padding-bottom:.5rem;
   }
 </style>
 </head>
 <body>
-  <h1>Quad Foundation</h1>
-  <div class="rule"></div>
-  <a href="mailto:info@quad.to">Contact us</a>
+  <main>
+    <h1>Quad Foundation</h1>
+    <div class="rule"></div>
+    <a href="mailto:info@quad.to">Contact us</a>
+  </main>
   <address>12 rue Erasme, L-2012<br>Luxembourg</address>
 </body>
 </html>
